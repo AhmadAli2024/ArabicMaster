@@ -1,0 +1,136 @@
+:root{
+  --green: #a3bf2b;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--green);
+  color: white;
+  padding: 30px 5%;
+  height: 50px;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  display:flex;
+}
+
+nav li{
+  list-style: none;
+}
+
+nav li a{
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+  display: block;
+}
+
+nav li:hover{
+  background-color: #c3df4b;
+}
+
+.login{
+  width: 450px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Helvetica;
+}
+
+.login h2{
+  font-size: 35px;
+  color: var(--green);
+  border-bottom: 2px solid var(--green);
+  text-align: center;
+  line-height: 1;
+  padding: 0 0 20px;
+  margin: 0 0;
+  text-transform: uppercase;
+}
+
+.login > ul{
+  padding:40px 0 35px;
+  margin: 0 0;
+}
+
+.login li{
+  padding: 0 0 10px;
+}
+
+.login li input{
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  text-indent: 15px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.login li input::-webkit-input-placeholder{
+  font-size: 15px;
+}
+
+.login li input[type="checkbox"]{
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+  vertical-align: -4px;
+  margin-right: 10px;
+  line-height: 36px;
+}
+
+.login button{
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  background: var(--green);
+  border-radius: 30px;
+  font-size: 20px;
+  color: white;
+  border: 0;
+}
+
+.login div > ul{
+  padding: 0 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 0;
+}
+
+.login div ul li{
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.login div ul li ~ li::before{
+  content: "";
+  width: 1px;
+  height: 18px;
+  background: #010101;
+  position: absolute;
+  left: 0;
+  transform: rotate(15deg);
+}
+
+.login div ul li a, .login a:visited{
+  text-decoration: none;
+  color: #010101;
+}
