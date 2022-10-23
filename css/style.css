@@ -96,7 +96,7 @@ nav li:hover{
   line-height: 36px;
 }
 
-.login button{
+.login li input[type="submit"]{
   height: 60px;
   line-height: 60px;
   width: 100%;
