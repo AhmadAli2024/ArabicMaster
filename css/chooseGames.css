@@ -2,18 +2,19 @@
   box-sizing: border-box;
   height: 100%;
   padding: 20px 2%;
-  display: flex;
-  
+  transform: translateY(0%);
+  border: 3px solid black;
 }
 
 .games_content{
   justify-content: center;
   display: grid;
-  grid-gap: 20px;
+  grid-row-gap: 30px;
+  grid-column-gap: 40px;
   grid-template-columns: repeat(auto-fill, minmax(400px, 40%));
 }
 
 .game-item{
   justify-content: center;
-  height: 300px;
+  height: 10em;
 }
