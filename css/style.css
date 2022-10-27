@@ -134,3 +134,7 @@ nav li:hover{
   text-decoration: none;
   color: #010101;
 }
+
+.signUp li label{
+  padding: 0 0.2em;
+}
