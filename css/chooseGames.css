@@ -2,6 +2,8 @@
   box-sizing: border-box;
   height: 100%;
   padding: 20px 2%;
+  display: flex;
+  
 }
 
 .games_content{
@@ -13,4 +15,5 @@
 
 .game-item{
   justify-content: center;
+  height: 300px;
 }
