@@ -1,14 +1,18 @@
 :root{
-  --themeColor1: #a3bf2b;
-  --themeColor2: white;
+  --themeColor1: #023330;
+  --themeColor2: #f3eecb;
+  --themeColor3: #aaaaaa;
+  --themeColor4: #030524
 }
 
 *{
+  color: var(--themeColor4);
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Helvetica;
   font-size: 1.01em;
+  text-decoration: none;
 }
 
 body{
@@ -43,8 +47,9 @@ nav li a{
   display: block;
 }
 
-nav li:hover{
-  background-color: #c3df4b;
+nav li:hover, nav li a:hover{
+  background-color: var(--themeColor2);
+  color: var(--themeColor1);
 }
 
 .login{

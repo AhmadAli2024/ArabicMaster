@@ -1,15 +1,9 @@
-:root{
-  --themeColor1: #a3bf2b;
-  --themeColor2: white;
-  --themeColor3: #aaaaaa;
-}
-
 .games{
   box-sizing: border-box;
   height: 100%;
   padding: 20px 2%;
   transform: translateY(0%);
-  border: 3px solid black;
+  border: 3px solid var(--themeColor4);
 }
 
 .games_content{
@@ -21,19 +15,24 @@
 }
 
 .game-link:hover{
+  color: var(--themeColor4);
   cursor: pointer;
   border-radius: 1em;
   box-shadow: 0.2em 0.2em 0 0 var(--themeColor3);
 }
 
 .game-item{
+  text-align: center;
   justify-content: center;
+  display: flex;
   height: 20em;
   border-radius: 1em;
   border: solid 0.1em var(--themeColor3);
 }
 
 .game-card-info, .game-card-cover{
+  display: grid;
+  place-content: center;
   box-sizing: border-box;
   display: inline-block;
   height: 100%;
@@ -41,9 +40,22 @@
 }
 
 .game-card-cover{
+  border-radius: 1em 0 0 1em;
   background-color: var(--themeColor1);
 }
 
 .game-card-info{
+  border-radius: 0 1em 1em 0;
+  background-color: var(--themeColor2);
+}
+
+.game-card-info h2{
+  
+}
+
+.game-card-info button{
+  display: block;
+  width: 80%;
+  border-radius: 0.5em;
   background-color: var(--themeColor2);
 }
