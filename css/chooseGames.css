@@ -9,9 +9,9 @@
 .games_content{
   justify-content: center;
   display: grid;
-  grid-row-gap: 30px;
-  grid-column-gap: 40px;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 40%));
+  grid-row-gap: 2em;
+  grid-column-gap: 3em;
+  grid-template-columns: repeat(auto-fill, minmax(33em, 1fr));
 }
 
 .game-link:hover{
@@ -50,11 +50,21 @@
 }
 
 .game-card-info h2{
-  font-size: 3em;
-  margin: 0.3em 0 0.4em 0;
+  font-size: 200%;
+  padding: 1em 0 0.4em 0;
+}
+
+.game-card-info p{
+  width: 80%;
+  text-align: justify;
+  margin-left: 10%;
+  padding: 1em 0 2em 0;
+  height: 8em;
 }
 
 .game-card-info button{
+  font-size: 150%;
+  height: 3em;
   margin-left: 10%;
   border-color: var(--themeColor1);
   cursor: pointer;
