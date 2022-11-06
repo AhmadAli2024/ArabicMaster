@@ -1,3 +1,9 @@
+:root{
+  --themeColor1: #a3bf2b;
+  --themeColor2: white;
+  --themeColor3: #aaaaaa;
+}
+
 .games{
   box-sizing: border-box;
   height: 100%;
@@ -14,7 +20,30 @@
   grid-template-columns: repeat(auto-fill, minmax(400px, 40%));
 }
 
+.game-link:hover{
+  cursor: pointer;
+  border-radius: 1em;
+  box-shadow: 0.2em 0.2em 0 0 var(--themeColor3);
+}
+
 .game-item{
   justify-content: center;
   height: 20em;
+  border-radius: 1em;
+  border: solid 0.1em var(--themeColor3);
+}
+
+.game-card-info, .game-card-cover{
+  box-sizing: border-box;
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+}
+
+.game-card-cover{
+  background-color: var(--themeColor1);
+}
+
+.game-card-info{
+  background-color: var(--themeColor2);
 }
