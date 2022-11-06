@@ -69,7 +69,7 @@
   cursor: pointer;
   display: block;
   width: 80%;
-  border-radius: 0.5em;
+  border-radius: 0.7em;
   background-color: var(--themeColor2);
 }
 

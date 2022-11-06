@@ -111,7 +111,12 @@ nav li:hover, nav li a:hover{
   border-radius: 30px;
   font-size: 20px;
   color: var(--themeColor2);
-  border: 0;
+  border: solid 0.1em var(--themeColor1);
+}
+
+.login li input[type="submit"]:hover{
+  background: var(--themeColor2);
+  color: var(--themeColor1);
 }
 
 .login div > ul{
