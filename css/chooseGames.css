@@ -50,12 +50,21 @@
 }
 
 .game-card-info h2{
-  
+  font-size: 3em;
+  margin: 0.3em 0 0.4em 0;
 }
 
 .game-card-info button{
+  margin-left: 10%;
+  border-color: var(--themeColor1);
+  cursor: pointer;
   display: block;
   width: 80%;
   border-radius: 0.5em;
   background-color: var(--themeColor2);
+}
+
+.game-card-info button:hover{
+  color: var(--themeColor2);
+  background-color: var(--themeColor1);
 }
