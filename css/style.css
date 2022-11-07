@@ -64,7 +64,6 @@ nav li:hover, nav li a:hover{
 }
 
 footer{
-  position: fixed;
   color: var(--themeColor2);
   width: 100%;
   background-color: var(--themeColor1);
@@ -104,13 +103,29 @@ footer ul li a:hover{
 }
 
 .footer-col a i{
-  font-size: 1.25;
   margin: 0 0.1em;
   transition: all 0.2s ease-in-out;
 }
 
 .footer-col a i:hover{
   transform: scale(1.4);
+}
+
+.main-article{
+  position: absolute;
+  margin-top: 4em;
+  max-width: 80em;
+  min-width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h1{
+  font-family: 'Varela Round', sans-serif;
+  font-size: 400%;
+  padding-bottom: 0.2em;
+  border-bottom: 3px solid var(--themeColor1);
+  margin-bottom: 0.2em;
 }
 
 .login{
