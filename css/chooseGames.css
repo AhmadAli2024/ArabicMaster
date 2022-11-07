@@ -10,14 +10,14 @@
   display: grid;
   grid-row-gap: 2em;
   grid-column-gap: 3em;
-  grid-template-columns: repeat(auto-fill, minmax(33em, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(35em, 1fr));
 }
 
 .game-link:hover{
   color: var(--themeColor4);
   cursor: pointer;
   border-radius: 1em;
-  box-shadow: 0.2em 0.2em 0 0 var(--themeColor3);
+  box-shadow: 0.3em 0.3em 0 0 var(--themeColor3);
 }
 
 .game-item{
@@ -41,6 +41,14 @@
 .game-card-cover{
   border-radius: 1em 0 0 1em;
   background-color: var(--themeColor1);
+}
+
+.game-card-cover i{
+  font-size: 10em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--themeColor2);
 }
 
 .game-card-info{

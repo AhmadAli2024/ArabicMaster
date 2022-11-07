@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   font-family: Helvetica;
-  font-size: 1.01em;
+  font-size: 1.02em;
   text-decoration: none;
 }
 
@@ -26,8 +26,8 @@ header{
   align-items: center;
   background-color: var(--themeColor1);
   color: var(--themeColor2);
-  padding: 30px 5%;
-  height: 50px;
+  padding: 2em 5%;
+  height: 2em;
 }
 
 nav ul{
@@ -38,12 +38,14 @@ nav ul{
 
 nav li{
   list-style: none;
+  border-radius: 0.2em;
 }
 
 nav li a{
   text-decoration: none;
   color: var(--themeColor2);
   padding: 1em;
+  margin: 0 0.2em;
   display: block;
 }
 
