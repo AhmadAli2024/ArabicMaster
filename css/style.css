@@ -122,12 +122,15 @@ footer ul li a:hover{
   transform: translateX(-50%);
 }
 
-h1, h2, h3, h4{
-  font-family: 'Varela Round', Helvetica, sans-serif;
+h1{
   font-size: 400%;
   padding-bottom: 0.2em;
   border-bottom: 3px solid var(--themeColor1);
   margin-bottom: 0.2em;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Varela Round', Helvetica, sans-serif;
 }
 
 .login{
