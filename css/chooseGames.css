@@ -79,6 +79,7 @@
   width: 80%;
   border-radius: 0.7em;
   background-color: var(--themeColor2);
+  transition: all 0.2s ease-in;
 }
 
 .game-card-info button:hover{
