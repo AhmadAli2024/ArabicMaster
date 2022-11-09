@@ -87,3 +87,74 @@
   color: var(--themeColor2);
   background-color: var(--themeColor1);
 }
+
+.products{
+  margin: 3em 0;
+  display: grid;
+  grid-row-gap: 2em;
+  grid-column-gap: 2em;
+  grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+}
+
+.card-vertical{
+  border-radius: 1em;
+  border: 0.1em solid var(--themeColor3);
+}
+
+.card-vertical-cover{
+  border-radius: 1em 1em 0 0;
+  background-color: var(--themeColor1);
+  display: grid;
+  place-content: center;
+  height: 8em;
+}
+
+.card-vertical button{
+  text-transform: capitalize;
+  letter-spacing: 0.03em;
+  background: var(--themeColor3);
+  border-radius: 1em;
+  height: 2em;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 1em;
+  width: 70%;
+}
+
+.card-vertical button span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.card-vertical button:hover span{
+  padding-right: 0.7em;
+}
+
+.card-vertical-info{
+  padding: 0 1em;
+}
+
+.card-vertical h2{
+  padding: 0.5em 0;
+}
+
+.card-vertical p{
+  padding-bottom: 1em;
+}
+
+.card-vertical button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -1.5em;
+  transition: 0.5s;
+}
+
+.card-vertical button:hover span:after {
+  opacity: 1;
+  right: -0.2em;
+}
