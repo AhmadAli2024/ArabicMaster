@@ -1,16 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 :root{
   --themeColor1: #023330;
   --themeColor2: white;
-  --themeColor3: #aaaaaa;
+  --themeColor3: #cccccc;
   --themeColor4: #030524
 }
 
 *{
-  color: var(--themeColor4);
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Helvetica;
+  font-family: 'Varela Round';
   font-size: 1.02em;
   text-decoration: none;
 }
@@ -18,6 +19,10 @@
 body{
   margin: 0;
   padding: 0;
+}
+
+a{
+  color:inherit;
 }
 
 header{
@@ -39,19 +44,93 @@ nav ul{
 nav li{
   list-style: none;
   border-radius: 0.2em;
+  margin: 0 0.2em;
 }
 
 nav li a{
   text-decoration: none;
+  border-radius: 0.2em;
   color: var(--themeColor2);
   padding: 1em;
-  margin: 0 0.2em;
   display: block;
+}
+
+nav li a[aria-current="page"]{
+  background-color: var(--themeColor2);
+  color: var(--themeColor1);
 }
 
 nav li:hover, nav li a:hover{
   background-color: var(--themeColor2);
   color: var(--themeColor1);
+}
+
+footer{
+  color: var(--themeColor2);
+  width: 100%;
+  background-color: var(--themeColor1);
+  bottom: 0;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 5%;
+}
+
+footer h4{
+  margin-bottom: 1em;
+  text-transform: capitalize;
+  padding-bottom: 0.4em;
+  border-bottom: 2px solid var(--themeColor2);
+}
+
+footer ul{
+  list-style: none;
+  text-transform: capitalize;
+}
+
+footer ul li:not(:last-child){
+  margin-bottom: 0.8em;
+}
+
+footer ul li a{
+  color: var(--themeColor3);
+  transition: all 0.3s ease;
+}
+
+footer ul li a:hover{
+  color: var(--themeColor2);
+  padding-left: 0.8em;
+}
+
+.footer-col a i{
+  margin: 0 0.1em;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-col a i:hover{
+  transform: scale(1.4);
+}
+
+.main-article{
+  position: absolute;
+  padding: 4em 0;
+  max-width: 80em;
+  min-width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h1{
+  font-size: 400%;
+  padding-bottom: 0.2em;
+  border-bottom: 3px solid var(--themeColor1);
+  margin-bottom: 0.2em;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Varela Round', Helvetica, sans-serif;
 }
 
 .login{
@@ -60,7 +139,7 @@ nav li:hover, nav li a:hover{
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-family: Helvetica;
+  font-family:
 }
 
 .login h2{
