@@ -10,13 +10,13 @@
     <section class="login signUp">
       <h2>Sign Up</h2>
       <ul style="list-style: none">
-        <form class="" action="" method="">
-          <li><label for="firstNameInput">First Name</label><br><input type="text" placeholder="First Name" id="firstNameInput" title="firstNameInput"></li>
-          <li><label for="lastNameInput">Last Name</label><br><input type="text" placeholder="Last Name" id="lastNameInput" title="lastNameInput"></li>
-          <li><label for="emailInput">Email</label><br><input type="text" placeholder="Email" id="emailInput" title="emailInput"></li>
-          <li><input type="text" placeholder="Username" title="idInput"></li>
-          <li><input type="password" placeholder="Password" title="passwordInput"></li>
-          <li><input type="submit" name="" value="Sign Up"></li>
+        <form action="/cgi-bin/signUp.py" method="post">
+          <li><label for="firstNameInput">First Name</label><br><input type="text" placeholder="First Name" id="firstNameInput" title="firstNameInput" name="firstNameInput"></li>
+          <li><label for="lastNameInput">Last Name</label><br><input type="text" placeholder="Last Name" id="lastNameInput" title="lastNameInput" name="lastNameInput"></li>
+          <li><label for="emailInput">Email</label><br><input type="text" placeholder="Email" id="emailInput" title="emailInput" name="emailInput"></li>
+          <li><input type="text" placeholder="Username" title="idInput" name="Username" id="Username"></li>
+          <li><input type="password" placeholder="Password" title="passwordInput" name="passwordInput" id="passwordInput"></li>
+          <li><input type="submit" name="submit" value="Submit"></li>
         </form>
       </ul>
       <div>
