@@ -115,7 +115,7 @@ footer ul li a:hover{
 
 .main-article{
   position: absolute;
-  padding: 4em 0;
+  padding: 4em 0 10em 0;
   max-width: 80em;
   min-width: 70%;
   left: 50%;
