@@ -1,7 +1,5 @@
 #! /usr/bin/python3
 
-print("Content-type: text/html\n\n")
-
 import sys
 import hashlib 
 import mysql.connector
@@ -28,10 +26,11 @@ try:
     (passwordCorB,) = mycursor.fetchall()
     passwordCor = passwordCorB["password"]
     if(passwordCor != password):
-        print("invalid pass")
+        print("Location: http://localhost/ArabicMaster/UserRegistration/login.html\n\n")
     else:
         mycursor.execute(f"SELECT firstName FROM users WHERE email=\"{email}\";")
         (nameBuf,) = mycursor.fetchall()
-        print("hello "+ nameBuf["firstName"])
+        print("Location: http://localhost/ArabicMaster/games.html\n\n")
 except:
-    print("Invalid Input")
+    print("Location: http://localhost/ArabicMaster/UserRegistration/login.html\n\n")
+

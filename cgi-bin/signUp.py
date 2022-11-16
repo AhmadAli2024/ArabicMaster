@@ -1,6 +1,7 @@
 #! /usr/bin/python3
 
-print("Content-type: text/html\n\n")
+#print("Content-type: text/html\n\n")
+print("Location: http://localhost/ArabicMaster/games.html\n\n")
 
 import sys
 import hashlib 
