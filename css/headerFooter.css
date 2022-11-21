@@ -1,0 +1,87 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--themeColor1);
+  color: var(--themeColor2);
+  padding: 2em 5%;
+  height: 2em;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  display:flex;
+}
+
+nav li{
+  list-style: none;
+  border-radius: 0.2em;
+  margin: 0 0.2em;
+}
+
+nav li a{
+  text-decoration: none;
+  border-radius: 0.2em;
+  color: var(--themeColor2);
+  padding: 1em;
+  display: block;
+}
+
+nav li a[aria-current="page"]{
+  background-color: var(--themeColor2);
+  color: var(--themeColor1);
+}
+
+nav li:hover, nav li a:hover{
+  background-color: var(--themeColor2);
+  color: var(--themeColor1);
+}
+
+footer{
+  color: var(--themeColor2);
+  width: 100%;
+  background-color: var(--themeColor1);
+  bottom: 0;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 5%;
+}
+
+footer h4{
+  margin-bottom: 1em;
+  text-transform: capitalize;
+  padding-bottom: 0.4em;
+  border-bottom: 2px solid var(--themeColor2);
+}
+
+footer ul{
+  list-style: none;
+  text-transform: capitalize;
+}
+
+footer ul li:not(:last-child){
+  margin-bottom: 0.8em;
+}
+
+footer ul li a{
+  color: var(--themeColor3);
+  transition: all 0.3s ease;
+}
+
+footer ul li a:hover{
+  color: var(--themeColor2);
+  padding-left: 0.8em;
+}
+
+.footer-col a i{
+  margin: 0 0.1em;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-col a i:hover{
+  transform: scale(1.4);
+}
