@@ -3,6 +3,10 @@ body{
   min-height: 40em;
 }
 
+/* div{
+  border: 2px solid black;
+} */
+
 .game-area{
   border-radius: 1rem;
   position: absolute;
@@ -12,6 +16,7 @@ body{
   width: max(90vw, 50em);
   height: 80vh;
   min-height: 40em;
+  margin-bottom: 5rem;
 }
 
 .game-area-letters{
@@ -40,17 +45,39 @@ body{
   font-size: max(400%, 5rem);
 }
 
-input{
+.user-input-interaction{
+  position: absolute;
+  bottom: 0;
   width: 100%;
   height: 6rem;
-  text-align: center;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  display: grid;
+  grid-template-columns: 2fr 7fr 1fr;
+  column-gap: 0.5rem;
+  font-size: 1.8rem;
   border-radius: 1rem;
-  font-size: 2rem;
 }
 
-input::-webkit-input-placeholder{
-  font-size: 2rem;
+.points-display{
+  height: inherit;
+  background-color: var(--themeColor3);
+  display: inline-grid;
+  padding-top: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.user-input-interaction input{
+  display: inline-grid;
+  height: inherit;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+#upload-word{
+  font-size: 3.6rem;
+  padding-top: 1rem;
+  color: inherit;
+  background-color: var(--themeColor3);
+  border-radius: 1rem;
+  text-align: center;
 }
