@@ -3,30 +3,21 @@ body{
   min-height: 40em;
 }
 
-/* div{
-  border: 2px solid black;
-} */
-
 .game-area{
   border-radius: 1rem;
   position: absolute;
-  top:8em;
+  margin: 5rem 0;
   left:50vw;
   transform: translateX(-50%);
   width: max(90vw, 50em);
-  height: 80vh;
-  min-height: 40em;
-  margin-bottom: 5rem;
+  height: max(40rem, 80vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .game-area-letters{
-  margin-top: 5%;
-}
-
-@media (min-width:1000px) {
-  .game-area-letters{
-    margin-top: 5%;
-  }
+  margin-top: 3rem;
 }
 
 .game-area-letters ul{
@@ -48,20 +39,20 @@ body{
 .user-input-interaction{
   position: absolute;
   bottom: 0;
-  width: 100%;
-  height: 6rem;
+  width: clamp(40rem, 75%, 80rem);
+  height: 5rem;
   display: grid;
   grid-template-columns: 2fr 7fr 1fr;
   column-gap: 0.5rem;
-  font-size: 1.8rem;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
   border-radius: 1rem;
 }
 
 .points-display{
   height: inherit;
   background-color: var(--themeColor3);
-  display: inline-grid;
-  padding-top: 2rem;
+  display: grid;
+  place-content: center;
   text-align: center;
   border-radius: 1rem;
 }
@@ -74,10 +65,30 @@ body{
 }
 
 #upload-word{
-  font-size: 3.6rem;
-  padding-top: 1rem;
+  display: grid;
+  place-content: center;
   color: inherit;
   background-color: var(--themeColor3);
   border-radius: 1rem;
   text-align: center;
+}
+
+.used-words{
+  width: 100%;
+  text-align: -webkit-center;
+}
+
+#used-words-list{
+  margin: 2rem 0;
+  position: relative;
+  width: clamp(10rem, 60%, 40rem);
+}
+#used-words-list li{
+  height: 3.5rem;
+  font-size: 1.3rem;
+  background-color: var(--themeColor3);
+  border-radius: 1rem;
+  display: grid;
+  place-content: center;
+  margin: 0.4rem 0;
 }
