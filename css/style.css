@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Varela Round';
-  font-size: 1.02em;
+  font-size: 1.03em;
   text-decoration: none;
   list-style: none;
 }
@@ -44,6 +44,7 @@ h1{
 }
 
 h1, h2, h3, h4, h5, h6{
+  display: inline-block;
   font-family: 'Varela Round', Helvetica, sans-serif;
 }
 
