@@ -1,7 +1,6 @@
 #! /usr/bin/python3
 
 #print("Content-type: text/html\n\n")
-print("Location: http://localhost/ArabicMaster/games.html\n\n")
 
 import sys
 import hashlib 
@@ -30,4 +29,4 @@ mydb.cursor().execute(f"INSERT INTO users(firstName,lastName,email,userName,pass
 
 mydb.commit()
 
-print("signup sucess")
+print("Location: http://localhost:1000/ArabicMaster/game/games.html\n\n")

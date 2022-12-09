@@ -26,11 +26,11 @@ try:
     (passwordCorB,) = mycursor.fetchall()
     passwordCor = passwordCorB["password"]
     if(passwordCor != password):
-        print("Location: http://localhost/ArabicMaster/UserRegistration/login.html\n\n")
+        print("Location: http://localhost:1000/ArabicMaster/UserRegistration/login.html\n\n")
     else:
         mycursor.execute(f"SELECT firstName FROM users WHERE email=\"{email}\";")
         (nameBuf,) = mycursor.fetchall()
-        print("Location: http://localhost/ArabicMaster/games.html\n\n")
+        print("Location: http://localhost:1000/ArabicMaster/game/games.html\n\n")
 except:
-    print("Location: http://localhost/ArabicMaster/UserRegistration/login.html\n\n")
+    print("Location: http://localhost:1000/ArabicMaster/UserRegistration/login.html\n\n")
 
