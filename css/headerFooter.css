@@ -8,6 +8,10 @@ header{
   height: 2em;
 }
 
+header #logo{
+  height: 3em;
+}
+
 nav ul{
   margin: 0;
   padding: 0;
