@@ -1,13 +1,18 @@
+.main-article h1, h2, h3, h4, h5, h6{
+  display: inline-block;
+}
+
 h2{
   font-size: 200%;
   padding-bottom: 0.1rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.8rem;
   border-bottom: 3px solid var(--themeColor1);
 }
 
 p{
   font-size: clamp(1rem, 2vw, 1.3rem);
   line-height: 1.25;
+  text-align: justify;
 }
 
 h2+p{
@@ -19,7 +24,7 @@ h2+p{
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   align-items: center;
-  padding: 0.2rem 0;
+  padding: 1rem 0;
   margin: 0 auto;
   font: 500 100%/1.5 system-ui;
 }
@@ -27,6 +32,14 @@ h2+p{
 .para-pic img {
   border-radius: 1em;
   max-width: 100%;
+}
+
+.para-pic:has(q) p{
+  text-align: center;
+}
+
+.para-pic p q{
+  font-size: 3rem;
 }
 
 @media (max-width: 1200px) {
