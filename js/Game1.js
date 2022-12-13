@@ -18,6 +18,13 @@ function addToUsedWords(word,answer) {
   ul.appendChild(li);
 }
 
+
+const roots = ["بطل","ءيس","بسس","بزق","ءما"]
+
+const children = [["أمل","تأمل"],["بزق","بزاق","بزاقة"],["بس"],["ايس","ايس"],["ابطل","بطالة","بطل","بطولة"]]
+
+
+
 function updateClient(word){
 	const cars = ["اس","اسوان","اسوة","ماسة"];
 	for(let i =0;i<4;i++){
