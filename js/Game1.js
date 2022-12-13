@@ -3,7 +3,11 @@
 points = 0
 
 var wordInput = document.getElementById("word-input");
-const xhr = new XMLHttpRequest()
+const xhr = new XMLHttpRequest();
+const roots = ["بطل","ءيس","بسس","بزق","ءما"];
+let children = [["أمل","تأمل"],["بزق","بزاق","بزاقة"],["بس"],["ايس","ايس"],["ابطل","بطالة","بطل","بطولة"]];
+children.reverse();
+let answers = [];
 
 function addToUsedWords(word,answer) {
   let ul = document.getElementById("used-words-list");
@@ -19,22 +23,26 @@ function addToUsedWords(word,answer) {
 }
 
 
-const roots = ["بطل","ءيس","بسس","بزق","ءما"]
-
-const children = [["أمل","تأمل"],["بزق","بزاق","بزاقة"],["بس"],["ايس","ايس"],["ابطل","بطالة","بطل","بطولة"]]
-
-
-
 function updateClient(word){
-	const cars = ["اس","اسوان","اسوة","ماسة"];
 	for(let i =0;i<4;i++){
-		if(cars[i] == word){
+		if(answers[i] == word){
 			return true;
 		}
 	}
 	return false;
 }
 
+
+function getRoot(){
+  let idx = Math.floor(Math.random()*5);
+  answers = children[idx];
+  let rootLettersList = document.getElementById('root-letter-list');
+  for(let i=2; i>=0; i--){
+    let li = document.createElement("li");
+    li.innerHTML = roots[idx][i];
+    rootLettersList.appendChild(li);
+  }
+}
 
 function getCheckAppend() {
   let word = wordInput.value;
@@ -49,7 +57,7 @@ function getCheckAppend() {
 	else{
 	  document.getElementById("points").innerHTML=points;
   }
-  if(points == 40){
+  if(points == answers.length*10){
 	  let rootLettersList = document.getElementById("root-letter-list");
     let rootLetters = rootLettersList.getElementsByTagName('li');
 	  for(let i =0;i<3;i++){
@@ -65,3 +73,5 @@ wordInput.addEventListener("keydown", (e)=>{
     getCheckAppend();
   }
 });
+
+getRoot();
