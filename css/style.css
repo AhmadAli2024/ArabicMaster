@@ -14,13 +14,13 @@
   font-family: 'Varela Round';
   font-size: 1.03em;
   text-decoration: none;
-  list-style: none;
 }
 
 body{
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 a{

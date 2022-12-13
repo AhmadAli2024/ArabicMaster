@@ -19,6 +19,14 @@ h2+p{
   text-indent: 0;
 }
 
+.main-article ul{
+  list-style: square inside none;
+}
+
+.main-article li{
+  margin: 0.3rem 0;
+}
+
 .para-pic {
   display: grid;
   grid-template-columns: 1fr 1fr;
