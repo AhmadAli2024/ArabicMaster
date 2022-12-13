@@ -49,6 +49,10 @@ footer{
   bottom: 0;
 }
 
+footer h4{
+  display: block;
+}
+
 .footer-container{
   display: flex;
   justify-content: space-between;
