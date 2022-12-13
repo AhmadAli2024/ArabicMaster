@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-points = 0
-
+points = 0;
+attempt = 0;
 var wordInput = document.getElementById("word-input");
 const xhr = new XMLHttpRequest();
 const roots = ["بطل","ءيس","بسس","بزق","ءما"];
@@ -26,9 +26,11 @@ function addToUsedWords(word,answer) {
 function updateClient(word){
 	for(let i =0;i<4;i++){
 		if(answers[i] == word){
+      answers.splice(i, 1);
 			return true;
 		}
 	}
+  attempt+=1;
 	return false;
 }
 
@@ -45,6 +47,15 @@ function getRoot(){
 }
 
 function getCheckAppend() {
+  if(attempt == 5){
+    document.getElementById('used-words-list').innerHTML =  '';
+    document.getElementById('root-letter-list').innerHTML =  '';
+    attempt = 0;
+    points=0;
+    document.getElementById("points").innerHTML=points;
+    getRoot();
+    return;
+  }
   let word = wordInput.value;
   if(word===''){return;}
   // code to verify the words
