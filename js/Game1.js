@@ -43,7 +43,8 @@ function getCheckAppend() {
 	  document.getElementById("points").innerHTML=points;
   }
   if(points == 40){
-	  let rootLetters = document.getElementById("root-letter-list");
+	  let rootLettersList = document.getElementById("root-letter-list");
+    let rootLetters = rootLettersList.getElementsByTagName('li');
 	  for(let i =0;i<3;i++){
 		  rootLetters[i].style.background="green";
 	  }
