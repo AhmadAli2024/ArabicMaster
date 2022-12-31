@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root{
+    --primary:135, 206, 235;
+    --secondary:255, 255, 224;
+    --tertiary:255, 192, 203;
+    --quaternary:144, 238, 144;
+    --quinary:255, 204, 153;
+    --text-dark: 40,40,40;
+}
+
+body{
+    font-family: 'Lato';
+    min-width: 260px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+
+#practice{
+    height: 40rem;
+    background-image: url("../img/floatingGlobe-wide.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+section:has(.section-text){
+    position: relative;
+}
+
+.section-text{
+    position: absolute;
+    inset: auto 0 0 0;
+    padding: 2rem 2rem;
+    margin: 0 clamp(2rem, 9%, 5rem);
+    background-color: rgb(var(--tertiary), 0.7);
+    margin-bottom: 2rem;
+    max-width: 30rem;
+}
+
+.section-text p{
+    max-width: 28rem;
+}
+
+[class*='primary']{
+    background-color: rgb(var(--primary));
+    border: 1px solid rgb(var(--primary));
+    color: var(--text-dark);
+}
