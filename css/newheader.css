@@ -2,7 +2,9 @@ nav{
     text-transform: capitalize;
 }
 
-
+nav img{
+    height: 2rem;
+}
 
 .navbar-toggler{
     width: 1.5rem;

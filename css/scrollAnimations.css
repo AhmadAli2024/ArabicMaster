@@ -1,0 +1,46 @@
+.reveal{
+    position: relative;
+    transform: translateY(6rem);
+    opacity: 0;
+    transition: transform 1.5s ease, opacity 1.5s ease;
+}
+
+.reveal.revealed{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* underlining headers */
+section h2{
+    display: inline-block;
+}
+
+section h2.reveal::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: var(--primary);
+    opacity: 0;
+    transition: opacity 1000ms ease 100ms, transform 1000ms ease 100ms;
+}
+
+section h2.revealed::after {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+section h2.reveal{
+    overflow: hidden;
+}
+
+section h2.reveal::after {
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+}
+
+section h2.revealed::after{
+    transform: translate3d(0, 0, 0);
+}

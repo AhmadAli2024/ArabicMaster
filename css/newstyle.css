@@ -57,3 +57,8 @@ section:has(.section-text){
     border: 1px solid rgb(var(--primary));
     color: var(--text-dark);
 }
+
+[class*='btn']{
+    border-radius: 1rem;
+    text-transform: capitalize;
+}
