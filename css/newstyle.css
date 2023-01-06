@@ -113,11 +113,13 @@ div.section-text {
 
 .btn:hover,
 .btn:active,
-.btn:visited,
 .btn.active,
-.btn:focus,
 .btn.dropdown-toggle.show {
   background-color: hsl(var(--dark)) !important;
+  color: hsl(var(--text-dark)) !important;
+}
+
+.btn:focus {
   color: hsl(var(--text-dark)) !important;
 }
 
